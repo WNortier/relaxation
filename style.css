@@ -72,7 +72,7 @@ body {
   left: 140px;
   width: 20px;
   height: 190px;
-  animation: rotate 7.5s linear forwards infinite;
+
   transform-origin: bottom center;
 }
 
@@ -83,5 +83,66 @@ body {
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+.container.grow {
+  animation: grow 3s linear forwards;
+}
+
+.container.shrink {
+  animation: shrink 3s linear forwards;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes shrink {
+  from {
+    transform: scale(1.2);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.btn {
+  /* padding: 1rem; */
+  background: #55b7a4;
+  border-radius: 5px;
+  font-family: inherit;
+  position: absolute;
+  left: 50;
+  bottom: 0;
+  margin-bottom: 5rem;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  text-decoration: none;
+  transform: translate(1.25px, 1.25px);
+  box-shadow: 0px 0px rgba(0, 0, 0, 0.3);
+  color: #f3f3f3;
+  text-decoration: none !important;
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
