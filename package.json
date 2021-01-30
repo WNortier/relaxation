@@ -4,7 +4,8 @@
   "description": "An application for relaxation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server index.html"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/WNortier/relaxation/issues"
   },
-  "homepage": "https://github.com/WNortier/relaxation#readme"
+  "homepage": "https://github.com/WNortier/relaxation#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
