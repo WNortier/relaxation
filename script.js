@@ -11,6 +11,9 @@ btn.style.opacity = "1";
 btn.addEventListener("click", function () {
     btn.style.opacity = "0";
     btn.style.animation = "disappear 1s";
+    setTimeout(function () {
+        btn.style.display = "none";
+    }, 1025);
     pointerContainer.style.top = "-40px";
     pointerContainer.style.left = "140px";
     var breathAnimation = function () {
