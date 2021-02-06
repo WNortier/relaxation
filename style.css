@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap");
 
-html {
+video {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  outline: none;
+  margin: 5rem;
+  transition: all 1.5s;
+  opacity: 0.25;
+}
+
+video:hover {
+  transform: scale(1.05);
+  opacity: 1;
 }
 
 * {

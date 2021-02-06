@@ -7,6 +7,8 @@ var totalTime = 7500;
 var breathTime = (totalTime / 5) * 2;
 var holdTime = totalTime / 5;
 var running = false;
+var vid = document.getElementById("my-video");
+vid.volume = 0.5;
 btn.style.opacity = "1";
 btn.addEventListener("click", function () {
     btn.style.opacity = "0";

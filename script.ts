@@ -9,6 +9,10 @@ const totalTime = 7500;
 const breathTime = (totalTime / 5) * 2;
 const holdTime = totalTime / 5;
 const running = false;
+const vid = document.getElementById("my-video") as HTMLVideoElement;
+
+vid!.volume = 0.5;
+
 btn.style.opacity = "1";
 
 btn.addEventListener("click", () => {
